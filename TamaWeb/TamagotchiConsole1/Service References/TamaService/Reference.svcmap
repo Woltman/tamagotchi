@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9433ebaf-2ce5-4165-89dd-e0ed5c3d27d1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4956/TamagotchiService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TamagotchiService.wsdl" MetadataType="Wsdl" ID="85ef9bd5-bce0-40be-885c-e3f22e9e443e" SourceId="1" SourceUrl="http://localhost:4956/TamagotchiService.svc?wsdl" />
+    <MetadataFile FileName="TamagotchiService.xsd" MetadataType="Schema" ID="d0fb9790-42f7-4c25-980c-dd70d5e9c10f" SourceId="1" SourceUrl="http://localhost:4956/TamagotchiService.svc?xsd=xsd2" />
+    <MetadataFile FileName="TamagotchiService1.xsd" MetadataType="Schema" ID="accc1a2f-679e-4ae1-872c-3b7618673910" SourceId="1" SourceUrl="http://localhost:4956/TamagotchiService.svc?xsd=xsd1" />
+    <MetadataFile FileName="TamagotchiService2.xsd" MetadataType="Schema" ID="d9affc69-ad99-43f5-8e2b-24ff49f7705f" SourceId="1" SourceUrl="http://localhost:4956/TamagotchiService.svc?xsd=xsd0" />
+    <MetadataFile FileName="TamagotchiService.disco" MetadataType="Disco" ID="9cb4eb44-d869-46e0-af83-b77d6c0f264d" SourceId="1" SourceUrl="http://localhost:4956/TamagotchiService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

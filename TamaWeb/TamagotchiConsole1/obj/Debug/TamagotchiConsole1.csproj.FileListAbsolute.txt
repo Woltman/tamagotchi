@@ -1,0 +1,6 @@
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\TamagotchiConsole1\bin\Debug\TamagotchiConsole1.exe.config
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\TamagotchiConsole1\bin\Debug\TamagotchiConsole1.exe
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\TamagotchiConsole1\bin\Debug\TamagotchiConsole1.pdb
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\TamagotchiConsole1\obj\Debug\TamagotchiConsole1.csprojResolveAssemblyReference.cache
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\TamagotchiConsole1\obj\Debug\TamagotchiConsole1.exe
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\TamagotchiConsole1\obj\Debug\TamagotchiConsole1.pdb

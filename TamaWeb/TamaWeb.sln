@@ -1,0 +1,75 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamaWeb", "TamaWeb\TamaWeb.csproj", "{D46E5528-F129-4A90-A2A2-C9F0CDFE4D56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tama.Contract", "Tamagotchi.Contract\Tama.Contract.csproj", "{33E1839D-A583-490E-8F1E-A51D3803EBCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamagotchiConsole", "..\..\..\..\Downloads\TamagotchiConsole\TamagotchiConsole\TamagotchiConsole\TamagotchiConsole.csproj", "{4EB6265E-2C29-4C82-A61D-9331B03F8C54}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D46E5528-F129-4A90-A2A2-C9F0CDFE4D56} = {D46E5528-F129-4A90-A2A2-C9F0CDFE4D56}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TamagotchiMVC", "TamagotchiMVC\TamagotchiMVC.csproj", "{B4C814BF-E2D9-4456-97FC-2FCF91F790BA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D46E5528-F129-4A90-A2A2-C9F0CDFE4D56} = {D46E5528-F129-4A90-A2A2-C9F0CDFE4D56}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{D9168468-CA05-4C71-8158-40AC562E0AB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{4FA21FE3-826F-40F6-A239-445BB9DAA59A}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-AzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{950264EA-1307-4081-9587-8C5BBAE4BBCA}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\TamagotchiMVC.json = PublishScripts\Templates\TamagotchiMVC.json
+		PublishScripts\Templates\TamagotchiMVC.param.dev.json = PublishScripts\Templates\TamagotchiMVC.param.dev.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contract", "Contract", "{092F908A-6516-4428-8500-B008A87B8285}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Console", "Console", "{43B9FC78-965C-4949-88E7-02D01111C1AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebService", "WebService", "{3D900D1C-6007-44E6-B644-793910845D1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{E20FC21C-6A06-43DF-B7EE-732F70BDA6B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D46E5528-F129-4A90-A2A2-C9F0CDFE4D56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D46E5528-F129-4A90-A2A2-C9F0CDFE4D56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D46E5528-F129-4A90-A2A2-C9F0CDFE4D56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D46E5528-F129-4A90-A2A2-C9F0CDFE4D56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33E1839D-A583-490E-8F1E-A51D3803EBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33E1839D-A583-490E-8F1E-A51D3803EBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33E1839D-A583-490E-8F1E-A51D3803EBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33E1839D-A583-490E-8F1E-A51D3803EBCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EB6265E-2C29-4C82-A61D-9331B03F8C54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EB6265E-2C29-4C82-A61D-9331B03F8C54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EB6265E-2C29-4C82-A61D-9331B03F8C54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EB6265E-2C29-4C82-A61D-9331B03F8C54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C814BF-E2D9-4456-97FC-2FCF91F790BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C814BF-E2D9-4456-97FC-2FCF91F790BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C814BF-E2D9-4456-97FC-2FCF91F790BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C814BF-E2D9-4456-97FC-2FCF91F790BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D46E5528-F129-4A90-A2A2-C9F0CDFE4D56} = {3D900D1C-6007-44E6-B644-793910845D1E}
+		{33E1839D-A583-490E-8F1E-A51D3803EBCF} = {092F908A-6516-4428-8500-B008A87B8285}
+		{4EB6265E-2C29-4C82-A61D-9331B03F8C54} = {43B9FC78-965C-4949-88E7-02D01111C1AF}
+		{B4C814BF-E2D9-4456-97FC-2FCF91F790BA} = {E20FC21C-6A06-43DF-B7EE-732F70BDA6B2}
+		{4FA21FE3-826F-40F6-A239-445BB9DAA59A} = {D9168468-CA05-4C71-8158-40AC562E0AB2}
+		{950264EA-1307-4081-9587-8C5BBAE4BBCA} = {D9168468-CA05-4C71-8158-40AC562E0AB2}
+	EndGlobalSection
+EndGlobal

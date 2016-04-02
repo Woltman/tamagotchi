@@ -1,0 +1,89 @@
+﻿@model TamagotchiMVC.Models.TamagotchiDTOViewModel
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>@Model.Name</h2>
+
+<div>
+    <h4>details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boredom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boredom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CooldownTill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CooldownTill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Health)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Health)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hunger)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hunger)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsAlive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsAlive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sleep)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sleep)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

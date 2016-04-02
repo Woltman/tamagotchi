@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "Tamago"
+  },
+  "hostingPlanName": {
+    "value": "Default1"
+  },
+  "siteLocation": {
+    "value": "West Europe"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "f562b6cc-4d70-44c8-a6a7-012fef9f61d2"
+  },
+  "resourceGroup": {
+    "value": "Default-Web-WestEurope"
+  }
+}

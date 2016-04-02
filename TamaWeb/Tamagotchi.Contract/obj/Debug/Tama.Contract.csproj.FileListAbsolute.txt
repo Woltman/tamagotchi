@@ -1,0 +1,5 @@
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\bin\Debug\Tama.Contract.dll
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\bin\Debug\Tama.Contract.pdb
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\obj\Debug\Tama.Contract.dll
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\obj\Debug\Tama.Contract.pdb
+C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\obj\Debug\Tama.Contract.csprojResolveAssemblyReference.cache
