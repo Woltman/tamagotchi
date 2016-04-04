@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using Tama.Contract;
 using TamaWeb.Models;
 
 namespace TamaWeb.Spelregels
 {
-    public class Honger : Spelregel
+    public class Munchies : Spelregel
     {
-        public Honger()
+        public Munchies()
         {
-            Order = 0;
+            Order = 50;
         }
         public override int Order { get; set; }
         public override void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
         {
-            tamagotchi.Hunger += ticks * 5;
+            if(tamagotchi.Boredom > 80)
+            {
+                tamagotchi.Hunger += ticks * 5;
+            }
         }
     }
 }

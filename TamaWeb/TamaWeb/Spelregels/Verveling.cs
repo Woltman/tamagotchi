@@ -7,12 +7,16 @@ using TamaWeb.Models;
 
 namespace TamaWeb.Spelregels
 {
-    public class Verveling : ISpelregel
+    public class Verveling : Spelregel
     {
-        public void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
+        public Verveling()
         {
-            tamagotchi.Boredom += ticks * 15;
-       
+            Order = 0;
+        }
+        public override int Order { get; set; }
+        public override void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
+        {
+            tamagotchi.Boredom += ticks * 15;       
         }
     }
 }

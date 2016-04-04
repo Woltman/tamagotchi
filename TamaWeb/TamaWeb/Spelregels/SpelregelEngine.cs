@@ -13,20 +13,34 @@ namespace TamaWeb.Spelregels
 
         public SpelregelEngine(IEnumerable<ISpelregel> regels, IGameClock gameClock)
         {
-            _regels = regels;
+            _regels = regels.OrderBy(r => r.Order);
             _gameClock = gameClock;
         }
 
         public void ExecuteSpelRegels(Tamagotchi tama)
         {
-            var ticks = _gameClock.GetTicks(tama.CreationDate, tama.Age);
-
-            foreach(var regel in _regels)
+            if (tama.IsAlive)
             {
-                regel.ExecuteSpelregel(tama, ticks);
-            }
+                var ticks = _gameClock.GetTicks(tama.CreationDate, tama.Age);
 
-            tama.Age += ticks;
+                foreach (var regel in _regels)
+                {
+                    regel.ExecuteSpelregel(tama, ticks);
+                }
+
+                tama.Age += ticks;
+            }
+        }
+
+        public void ExecuteSpelregelActions(Tamagotchi tama)
+        {
+            if (tama.IsAlive)
+            {
+                foreach (var regel in _regels)
+                {
+                    regel.ExecuteSpelregelAction(tama);
+                }
+            }
         }
     }
 }

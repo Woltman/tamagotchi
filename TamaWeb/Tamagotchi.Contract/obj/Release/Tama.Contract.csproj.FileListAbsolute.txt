@@ -3,3 +3,8 @@ C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\bin\Release\Tam
 C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\obj\Release\Tama.Contract.dll
 C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\obj\Release\Tama.Contract.pdb
 C:\Users\Thom\Source\Repos\Prog6Tama\TamaWeb\Tamagotchi.Contract\obj\Release\Tama.Contract.csprojResolveAssemblyReference.cache
+C:\Users\Thom\Source\Repos\tamagotchi2\TamaWeb\Tamagotchi.Contract\bin\Release\Tama.Contract.dll
+C:\Users\Thom\Source\Repos\tamagotchi2\TamaWeb\Tamagotchi.Contract\bin\Release\Tama.Contract.pdb
+C:\Users\Thom\Source\Repos\tamagotchi2\TamaWeb\Tamagotchi.Contract\obj\Release\Tama.Contract.csprojResolveAssemblyReference.cache
+C:\Users\Thom\Source\Repos\tamagotchi2\TamaWeb\Tamagotchi.Contract\obj\Release\Tama.Contract.dll
+C:\Users\Thom\Source\Repos\tamagotchi2\TamaWeb\Tamagotchi.Contract\obj\Release\Tama.Contract.pdb

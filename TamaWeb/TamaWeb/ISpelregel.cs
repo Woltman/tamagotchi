@@ -10,6 +10,9 @@ namespace TamaWeb
 {
     public interface ISpelregel
     {
-        void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks);        
+        int Order { get; set; }
+        void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks);
+        void ExecuteSpelregelAction(Tamagotchi tamagotchi);
+                
     }
 }

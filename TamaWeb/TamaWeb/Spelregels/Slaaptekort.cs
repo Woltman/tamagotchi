@@ -7,11 +7,16 @@ using TamaWeb.Models;
 
 namespace TamaWeb.Spelregels
 {
-    public class Slaaptekort : ISpelregel
+    public class Slaaptekort : Spelregel
     {
-        public void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
+        public Slaaptekort()
         {
-           
+            Order = 100;
+        }
+        public override int Order { get; set; }
+        public override void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
+        {
+                tamagotchi.IsAlive = !(tamagotchi.Sleep >= 100);
         }
     }
 }

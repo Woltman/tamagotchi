@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="TamagotchiContext-Web.config Connection String" description="TamagotchiContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:tama.database.windows.net, 1433;Database=TamagotchiDB;User ID=twoltman;Password=Gitaarpeuk1;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;;" tags="SqlConnectionString">
-    <parameterEntry kind="XmlFile" scope="C:\\Users\\Thom\\Source\\Repos\\Prog6Tama\\TamaWeb\\TamaWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TamagotchiContext']/@connectionString" />
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Thom\\Source\\Repos\\tamagotchi2\\TamaWeb\\TamaWeb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TamagotchiContext']/@connectionString" />
   </parameter>
 </parameters>

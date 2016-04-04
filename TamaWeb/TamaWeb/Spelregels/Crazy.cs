@@ -7,11 +7,15 @@ using TamaWeb.Models;
 
 namespace TamaWeb.Spelregels
 {
-    public class Crazy
-    {
-        public void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
+    public class Crazy : Spelregel
+    {       
+        public override void ExecuteSpelregelAction(Tamagotchi tamagotchi)
         {
-            
+            if(tamagotchi.Health == 100)
+            {
+                Random rdm = new Random();
+                tamagotchi.IsAlive = (rdm.Next(2) < 1);
+            }
         }
     }
 }

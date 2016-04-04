@@ -7,9 +7,14 @@ using TamaWeb.Models;
 
 namespace TamaWeb.Spelregels
 {
-    public class Isolatie : ISpelregel
+    public class Isolatie : Spelregel
     {
-        public void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
+        public Isolatie()
+        {
+            Order = 0;
+        }
+        public override int Order { get; set; }
+        public override void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
         {
             tamagotchi.Health += ticks * 5;
         }

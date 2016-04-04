@@ -166,7 +166,7 @@ namespace TamaWeb.Models
                 Health = this.Health,
                 IsAlive = this.IsAlive,
                 Age = this.Age,
-                CooldownTill = this.CooldownTill,                
+                CooldownTill = this.CooldownTill,            
             };
 
             return tamagotchi;
@@ -222,11 +222,7 @@ namespace TamaWeb.Models
         {
             int number = date.CompareTo(CooldownTill);
 
-            if(number == -1)
-            {
-                return false;
-            }
-            return true;
+            return !(number == -1);
         }
 
         public override string ToString()

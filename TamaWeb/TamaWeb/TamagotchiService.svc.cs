@@ -54,6 +54,7 @@ namespace TamaWeb
             }
 
             ExecuteSpelregels(tamagotchi);
+                      
 
             return tamagotchi.ToDTO();
         }
@@ -61,6 +62,8 @@ namespace TamaWeb
         public TamagotchiDTO Eat(int id)
         {
             var tamagotchi = repo.Find(id);
+            ExecuteSpelregels(tamagotchi);
+            ExecuteSpelregelActions(tamagotchi);
             tamagotchi.Eat();
             repo.SaveChanges();
             
@@ -70,6 +73,8 @@ namespace TamaWeb
         public TamagotchiDTO Hug(int id)
         {
             var tamagotchi = repo.Find(id);
+            ExecuteSpelregels(tamagotchi);
+            ExecuteSpelregelActions(tamagotchi);
             tamagotchi.Hug();
             repo.SaveChanges();
 
@@ -79,6 +84,8 @@ namespace TamaWeb
         public TamagotchiDTO Play(int id)
         {
             var tamagotchi = repo.Find(id);
+            ExecuteSpelregels(tamagotchi);
+            ExecuteSpelregelActions(tamagotchi);
             tamagotchi.Play();
             repo.SaveChanges();
 
@@ -88,6 +95,8 @@ namespace TamaWeb
         public TamagotchiDTO Rest(int id)
         {
             var tamagotchi = repo.Find(id);
+            ExecuteSpelregels(tamagotchi);
+            ExecuteSpelregelActions(tamagotchi);
             tamagotchi.Rest();
             repo.SaveChanges();
 
@@ -97,6 +106,8 @@ namespace TamaWeb
         public TamagotchiDTO Workout(int id)
         {
             var tamagotchi = repo.Find(id);
+            ExecuteSpelregels(tamagotchi);
+            ExecuteSpelregelActions(tamagotchi);
             tamagotchi.Workout();
             repo.SaveChanges();
 
@@ -106,6 +117,12 @@ namespace TamaWeb
         private void ExecuteSpelregels(Tamagotchi tamagotchi)
         {           
             _spelregelEngine.ExecuteSpelRegels(tamagotchi);
+
+            repo.SaveChanges();
+        }
+        private void ExecuteSpelregelActions(Tamagotchi tamagotchi)
+        {
+            _spelregelEngine.ExecuteSpelregelActions(tamagotchi);
 
             repo.SaveChanges();
         }
