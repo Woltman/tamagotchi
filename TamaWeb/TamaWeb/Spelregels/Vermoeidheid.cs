@@ -6,7 +6,7 @@ using Tama.Contract;
 using TamaWeb.Models;
 using TamaWeb.Spelregels;
 
-namespace TamaWeb
+namespace TamaWeb.Spelregels
 {
     public class Vermoeidheid : Spelregel
     {

@@ -131,7 +131,6 @@
     <Compile Include="Spelregels\Verveling.cs" />
     <Compile Include="Spelregels\Voedseltekort.cs" />
     <Compile Include="Spelregels\Vermoeidheid.cs" />
-    <Compile Include="Test.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tamagotchi.Contract\Tama.Contract.csproj">
