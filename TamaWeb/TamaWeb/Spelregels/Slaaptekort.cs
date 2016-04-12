@@ -16,7 +16,10 @@ namespace TamaWeb.Spelregels
         public override int Order { get; set; }
         public override void ExecuteSpelregel(Tamagotchi tamagotchi, int ticks)
         {
-                tamagotchi.IsAlive = !(tamagotchi.Sleep >= 100);
+            if(tamagotchi.Sleep >= 100)
+            {
+                tamagotchi.IsAlive = false;
+            }
         }
     }
 }

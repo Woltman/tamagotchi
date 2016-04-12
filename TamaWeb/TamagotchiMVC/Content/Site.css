@@ -28,7 +28,7 @@ textarea {
 }
 
 .content-background {
-    background-color:#837e7e;
+    background-color: white;
 }
 
 .table thead > tr > th, 
@@ -42,11 +42,11 @@ textarea {
 
 .content-background a:hover, 
 .content-background a:focus {
-    color: #19354E;
+    color: #333333;
     text-decoration: underline;
 }
 
  .content-background a {
-    color: #FFFFFF;
+    color: #333333;
     text-decoration: none;
 }

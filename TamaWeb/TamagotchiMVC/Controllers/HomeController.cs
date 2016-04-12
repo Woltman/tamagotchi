@@ -25,6 +25,32 @@ namespace TamagotchiMVC.Controllers
             }
         }
 
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(AddTamagotchi model)
+        {
+            using (var client = new TamagotchiServiceClient.TamagotchiServiceClient())
+            {
+                if (ModelState.IsValid)
+                {
+                    if (model.Name.Length >= 3 && model.Name.Length <= 20)
+                    {
+                        client.AddTamagotchi(model.Name);
+                        return RedirectToAction("index", "home");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Naam moet tussen de 3 en 20 karakters lang zijn");
+                    }
+                }
+                return View();
+            }
+        }
+
         public ActionResult Details(int ID)
         {
             using (var client = new TamagotchiServiceClient.TamagotchiServiceClient())

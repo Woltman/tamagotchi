@@ -8,7 +8,18 @@ using TamaWeb.Models;
 namespace TamaWeb.Spelregels
 {
     public class Crazy : Spelregel
-    {       
+    {
+        private Random r;
+
+        public Crazy(Random r)
+        {
+            this.r = r;
+        }
+
+        public Crazy()
+        {
+            r = new Random();
+        }
         public override void ExecuteSpelregelAction(Tamagotchi tamagotchi)
         {
             if(tamagotchi.Health == 100)
